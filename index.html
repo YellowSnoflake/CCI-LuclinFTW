@@ -51,6 +51,23 @@
     .hr { height:1px; background:#1f2937; border:0; margin:16px 0; }
     a { color:#9cc1ff; }
   </style>
+
+<style>
+  .tn-badge{
+    position:fixed; right:16px; bottom:16px; z-index:9999;
+    padding:10px 14px; border-radius:999px;
+    background:linear-gradient(135deg,#0ea5e9,#6366f1);
+    color:#fff; font-weight:600; letter-spacing:.2px;
+    box-shadow:0 8px 24px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
+    border:1px solid rgba(255,255,255,.08);
+    user-select:none; -webkit-user-select:none;
+  }
+  .tn-badge small{opacity:.85; font-weight:500;}
+  @media (max-width: 560px){
+    .tn-badge{ right:12px; bottom:12px; padding:8px 12px; font-size:12px; }
+  }
+</style>
+
 </head>
 <body>
   <div class="container">
@@ -96,11 +113,6 @@
       <div id="list" class="grid" style="margin-top:12px;"></div>
       <div id="empty" class="results-empty" style="display:none;">No results. Try a different term or clear filters.</div>
     </div>
-
-    <footer>
-      Effects hit the <strong>streamer</strong> only. Boss rolls are from a larger ATM10 pool (Wither, Ender Dragon, and others). Chance Cubes are only tied to <strong>.02</strong> prices.
-      Host this file on GitHub Pages: upload as <code>index.html</code> → Settings → Pages → “Deploy from branch”.
-    </footer>
   </div>
 
 <script>
@@ -221,5 +233,10 @@ document.getElementById('search').addEventListener('input', ()=>{ renderList(); 
   renderAmount(); renderList();
 })();
 </script>
+
+<div class="tn-badge" title="Hosted by TrustedNoobs">
+  <small>Hosted by</small> TrustedNoobs
+</div>
+
 </body>
 </html>
