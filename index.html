@@ -1,144 +1,125 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LuclinFTW Birthday Stream</title>
-  <meta name="description" content="Viewer guide: bits, donations, and exact-price effects for LuclinFTW Birthday Stream. Enter an amount to see what happens.">
-  <style>
-    :root {
-      --bg:#0b0f14; --panel:#121821; --muted:#8aa0b6; --text:#e6eef6; --accent:#60a5fa; --ok:#34d399; --warn:#f59e0b; --danger:#f87171;
-      --badge:#1f2937; --chip:#0ea5e9;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0; padding: 24px; background: var(--bg); color: var(--text);
-      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-    }
-    .container { max-width: 1100px; margin: 0 auto; }
-    h1 { margin: 0 0 8px 0; font-size: 28px; }
-    .sub { color: var(--muted); margin-bottom: 20px; }
-    .card {
-      background: linear-gradient(180deg, #111827, #0f172a);
-      border: 1px solid #1f2937; border-radius: 14px; padding: 16px; margin: 12px 0;
-      box-shadow: 0 8px 24px rgba(0,0,0,.35);
-    }
-    .row { display: grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 800px) { .row { grid-template-columns: 1fr 1fr; } }
-    .pill { display:inline-block; padding:4px 10px; background:#0b1220; border:1px solid #1f2a44; color:#9cc1ff; border-radius:999px; font-size:12px; margin-right:6px; cursor:pointer; }
-    .badge { display:inline-block; padding:3px 8px; background:var(--badge); color:#cbd5e1; border-radius:8px; font-size:12px; margin-right:6px; }
-    .accent { color: var(--accent); font-weight:600; }
-    input[type="number"], input[type="text"] {
-      width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #1f2937; background: #0b1220; color: var(--text);
-      outline: none;
-    }
-    input::placeholder { color:#5b6b7d; }
-    .btn {
-      cursor:pointer; padding:10px 14px; border-radius:10px; border:1px solid #1f2937; background:#0b1220; color:var(--text);
-    }
-    .btn:hover { border-color:#334155; }
-    .grid { display:grid; grid-template-columns: 1fr; gap: 12px; }
-    @media (min-width: 900px) { .grid { grid-template-columns: 1fr 1fr; } }
-    .event { border:1px solid #1f2937; border-radius:12px; padding:12px; background:#0d1423; }
-    .title { font-weight:600; }
-    .type { font-size:12px; color:#9ca3af; }
-    .desc { color:#d1d5db; margin:6px 0; }
-    footer { margin-top:24px; color:#94a3b8; font-size:12px; }
-    .muted { color:#94a3b8; }
-    .results-empty { color:#94a3b8; padding:8px; }
-    .chips { margin-top:6px; }
-    .chip { display:inline-block; background:#0c2936; color:#93c5fd; border:1px solid #0b3a57; padding:2px 8px; border-radius:999px; font-size:12px; margin-right:6px; }
-    .hr { height:1px; background:#1f2937; border:0; margin:16px 0; }
-    a { color:#9cc1ff; }
-  </style>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What Your Support Does — ATM10 + CCI</title>
+<meta name="description" content="Viewer guide + budget suggestions. Enter an amount to see what happens and what you could buy.">
 <style>
-  .tn-badge{
-    position:fixed; right:16px; bottom:16px; z-index:9999;
-    padding:10px 14px; border-radius:999px;
-    background:linear-gradient(135deg,#0ea5e9,#6366f1);
-    color:#fff; font-weight:600; letter-spacing:.2px;
-    box-shadow:0 8px 24px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06);
-    border:1px solid rgba(255,255,255,.08);
-    user-select:none; -webkit-user-select:none;
+  :root {
+    --bg:#0b0f14; --panel:#121821; --muted:#8aa0b6; --text:#e6eef6; --accent:#60a5fa;
+    --badge:#1f2937; --chip:#0ea5e9; --good:#34d399; --warn:#f59e0b;
   }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:24px; background:var(--bg); color:var(--text);
+         font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+  .container { max-width:1150px; margin:0 auto; }
+  h1 { margin:0 0 8px 0; font-size:28px; }
+  .sub { color:var(--muted); margin-bottom:20px; }
+  .card { background:linear-gradient(180deg,#111827,#0f172a); border:1px solid #1f2937; border-radius:14px; padding:16px; margin:12px 0;
+          box-shadow:0 8px 24px rgba(0,0,0,.35); }
+  .pill { display:inline-block; padding:4px 10px; background:#0b1220; border:1px solid #1f2a44; color:#9cc1ff; border-radius:999px; font-size:12px; margin-right:6px; cursor:pointer; }
+  .btn { cursor:pointer; padding:10px 14px; border-radius:10px; border:1px solid #1f2937; background:#0b1220; color:var(--text); }
+  .btn:hover { border-color:#334155; }
+  input[type="number"],input[type="text"]{ width:100%; padding:12px 14px; border-radius:10px; border:1px solid #1f2937; background:#0b1220; color:var(--text);}
+  input::placeholder{ color:#5b6b7d; }
+  .layout{ display:grid; grid-template-columns: 380px 1fr; gap:16px; }
+  @media (max-width: 980px){ .layout{ grid-template-columns:1fr; } }
+  .section-title{ color:#94a3b8; font-size:13px; margin-bottom:6px; }
+  .event{ border:1px solid #1f2937; border-radius:12px; padding:12px; background:#0d1423; margin-bottom:10px; }
+  .type{ font-size:12px; color:#9ca3af; }
+  .title{ font-weight:600; }
+  .desc{ color:#d1d5db; margin:6px 0; }
+  .chip{ display:inline-block; background:#0c2936; color:#93c5fd; border:1px solid #0b3a57; padding:2px 8px; border-radius:999px; font-size:12px; margin-right:6px; }
+  .list{ display:grid; grid-template-columns:1fr; gap:12px; }
+  .hr{ height:1px; background:#1f2937; border:0; margin:12px 0; }
+  .suggest{ border:1px dashed #334155; border-radius:12px; padding:12px; margin-bottom:10px; background:#0d1423; }
+  .muted{ color:#94a3b8; }
+  .money{ color:#60f0a8; font-weight:700; }
+  .tn-badge{ position:fixed; right:16px; bottom:16px; z-index:9999; padding:10px 14px; border-radius:999px;
+              background:linear-gradient(135deg,#0ea5e9,#6366f1); color:#fff; font-weight:600; letter-spacing:.2px;
+              box-shadow:0 8px 24px rgba(0,0,0,.35), inset 0 0 0 1px rgba(255,255,255,.06); border:1px solid rgba(255,255,255,.08); }
   .tn-badge small{opacity:.85; font-weight:500;}
-  @media (max-width: 560px){
-    .tn-badge{ right:12px; bottom:12px; padding:8px 12px; font-size:12px; }
-  }
 </style>
-
 </head>
 <body>
-  <div class="container">
-    <h1>What Your Support Does</h1>
-    <div class="sub">Type an amount (e.g., <span class="accent">$30.00</span>) to see what could happen, or browse all triggers.</div>
+<div class="container">
+  <h1>What Your Support Does</h1>
+  <div class="sub">Type an amount (e.g., <span style="color:#60a5fa">$30.00</span>) to see what could happen — and what you could buy.</div>
 
-    <div class="card">
-      <div class="row">
-        <div>
-          <label for="amount"><span class="muted">Amount Explorer</span></label>
-          <input id="amount" type="number" step="0.01" min="0" placeholder="Enter a donation (e.g., 30.00)">
-          <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
-            <button class="btn" onclick="usePreset(4.00)">$4.00</button>
-            <button class="btn" onclick="usePreset(4.99)">$4.99</button>
-            <button class="btn" onclick="usePreset(7.77)">$7.77</button>
-            <button class="btn" onclick="usePreset(17.77)">$17.77</button>
-            <button class="btn" onclick="usePreset(50.02)">$50.02</button>
-            <button class="btn" onclick="usePreset(75.00)">$75.00</button>
-            <button class="btn" onclick="usePreset(150.00)">$150.00</button>
-          </div>
+  <div class="card">
+    <div class="layout">
+      <div>
+        <div class="section-title">Amount Explorer</div>
+        <input id="amount" type="number" step="0.01" min="0" placeholder="Enter a donation (e.g., 30.00)">
+        <div style="margin-top:8px; display:flex; gap:8px; flex-wrap:wrap;">
+          <button class="btn" onclick="preset(4.00)">$4.00</button>
+          <button class="btn" onclick="preset(4.99)">$4.99</button>
+          <button class="btn" onclick="preset(5.00)">$5.00</button>
+          <button class="btn" onclick="preset(5.02)">$5.02</button>
+          <button class="btn" onclick="preset(7.77)">$7.77</button>
+          <button class="btn" onclick="preset(17.77)">$17.77</button>
+          <button class="btn" onclick="preset(50.02)">$50.02</button>
+          <button class="btn" onclick="preset(75.00)">$75.00</button>
+          <button class="btn" onclick="preset(150.00)">$150.00</button>
         </div>
-        <div>
-          <label for="search"><span class="muted">Search / Filter</span></label>
-          <input id="search" type="text" placeholder="Search (e.g., dragon, cake, boss, cube, cats, bits)">
-          <div style="margin-top:8px;">
-            <span class="pill" data-filter="donation" onclick="toggleFilter(this)">Donations</span>
-            <span class="pill" data-filter="bits" onclick="toggleFilter(this)">Bits</span>
-            <span class="pill" data-filter="subs" onclick="toggleFilter(this)">Subs/Gifts</span>
-            <span class="pill" data-filter="social" onclick="toggleFilter(this)">Follow/Host</span>
-            <span class="pill" data-filter="raid" onclick="toggleFilter(this)">Raid</span>
-          </div>
-        </div>
+        <div class="hr"></div>
+        <div class="section-title">Budget Suggestions</div>
+        <div id="suggestions" class="list"></div>
       </div>
-      <hr class="hr">
-      <div id="amountResults"></div>
-    </div>
 
-    <div class="card">
-      <div style="display:flex;justify-content:space-between;align-items:center">
-        <div class="muted">Browse All Triggers</div>
-        <button class="btn" onclick="copyLink()">Copy Link to This Search</button>
+      <div>
+        <div class="section-title">Search / Filter</div>
+        <input id="search" type="text" placeholder="Search (e.g., dragon, cake, boss, cube, cats, bits)">
+        <div style="margin-top:8px;">
+          <span class="pill" data-filter="donation" onclick="toggleFilter(this)">Donations</span>
+          <span class="pill" data-filter="bits" onclick="toggleFilter(this)">Bits</span>
+          <span class="pill" data-filter="subs" onclick="toggleFilter(this)">Subs/Gifts</span>
+          <span class="pill" data-filter="social" onclick="toggleFilter(this)">Follow/Host</span>
+          <span class="pill" data-filter="raid" onclick="toggleFilter(this)">Raid</span>
+        </div>
+        <div class="hr"></div>
+        <div id="amountResults" class="list"></div>
       </div>
-      <div id="list" class="grid" style="margin-top:12px;"></div>
-      <div id="empty" class="results-empty" style="display:none;">No results. Try a different term or clear filters.</div>
     </div>
   </div>
 
+  <div class="card">
+    <div style="display:flex;justify-content:space-between;align-items:center">
+      <div class="muted">Browse All Triggers</div>
+      <button class="btn" onclick="copyLink()">Copy Link to This Search</button>
+    </div>
+    <div id="list" class="list" style="margin-top:12px;"></div>
+    <div id="empty" class="muted" style="display:none;">No results. Try a different term or clear filters.</div>
+  </div>
+</div>
+
+<div class="tn-badge" title="Hosted by TrustedNoobs"><small>Hosted by</small> TrustedNoobs</div>
+
 <script>
-const DATA = {events: [{"id":"don-core-low","type":"donation","title":"General Chaos (low tier)","range":[1.0,74.99],"description":"Normal chaos effects. Might roll a major boss (rare).","details":"Boss pool includes Wither, Ender Dragon, and ATM bosses.","badges":["might roll boss"]},{"id":"don-core-high","type":"donation","title":"High Roller Chaos","range":[75.0,999999.0],"description":"Bigger chaos. Might roll a major boss (much higher chance).","details":"Boss pool includes Wither, Ender Dragon, and ATM bosses.","badges":["might roll boss"]},{"id":"don-150-end","type":"donation","exact":150.0,"title":"End Arena","description":"Teleports the streamer to a custom End pad and starts a dragon fight.","badges":["boss","signature"]},{"id":"don-666","type":"donation","exact":6.66,"title":"Jump Scare","description":"Rotating scary sounds and on-screen flash. You asked for it."},{"id":"don-3","type":"donation","exact":3.0,"title":"Random Item","description":"Drops a random useful item (dungeon loot)."},{"id":"don-4","type":"donation","exact":4.0,"title":"Cake Ingredients","description":"Gives 3\u00d7 milk, 2\u00d7 sugar, 1\u00d7 egg, 3\u00d7 wheat to craft a cake."},{"id":"don-499","type":"donation","exact":4.99,"title":"Birthday Spark","description":"Fireworks burst + small gift (emeralds + cake).","badges":["birthday"]},{"id":"don-6","type":"donation","exact":6.0,"title":"Diamonds","description":"4\u00d7 diamonds fall into your pockets."},{"id":"don-7","type":"donation","exact":7.0,"title":"Night Switch","description":"Flips the world to night."},{"id":"don-777","type":"donation","exact":7.77,"title":"Lucky Gift","description":"Two rolls of high-tier loot (End City / Bastion / Ancient City).","badges":["loot"]},{"id":"don-8","type":"donation","exact":8.0,"title":"Crazy Cat Lady","description":"Spawns 13 cats around the streamer."},{"id":"don-9","type":"donation","exact":9.0,"title":"This Little Piggy","description":"Spawns 5 pigs."},{"id":"don-10","type":"donation","exact":10.0,"title":"1000 Buttons","description":"Gives 4 stacks of stone buttons. Click responsibly."},{"id":"don-11","type":"donation","exact":11.0,"title":"Lobbers Box","description":"Spawns 3 magma cubes."},{"id":"don-12","type":"donation","exact":12.0,"title":"Who Let the Dogs Out","description":"Spawns 13 wolves."},{"id":"don-15","type":"donation","exact":15.0,"title":"BaseLine Chicken","description":"Summons a named chicken \"BaseLine\"."},{"id":"don-16","type":"donation","exact":16.0,"title":"SSSsss","description":"Spawns a creeper near the streamer."},{"id":"don-17","type":"donation","exact":17.0,"title":"Dawwwww","description":"Spawns a baby cow, baby pig, and baby sheep."},{"id":"don-1777","type":"donation","exact":17.77,"title":"Super Lucky Gift","description":"Three rolls of high-tier loot (End City / Bastion / Ancient City).","badges":["loot"]},{"id":"don-20","type":"donation","exact":20.0,"title":"Have a Gift","description":"A loot chest appears next to the streamer."},{"id":"don-21","type":"donation","exact":21.0,"title":"Thriller","description":"A mini zombie dance party (horde) arrives."},{"id":"don-25","type":"donation","exact":25.0,"title":"Witch Doctor","description":"Summons a coven of witches."},{"id":"don-29","type":"donation","exact":29.0,"title":"TNT Minecarts","description":"Four TNT minecarts roll in."},{"id":"don-30","type":"donation","exact":30.0,"title":"Pandora\u2019s Box","description":"Might roll lightning, levitation, a charged creeper, a skeleton wave, or invisibility."},{"id":"don-31","type":"donation","exact":31.0,"title":"Ghast Cameo","description":"A Ghast drops by to say hi (and scream)."},{"id":"don-35","type":"donation","exact":35.0,"title":"Level Up","description":"Big XP bump (+30 levels)."},{"id":"don-36","type":"donation","exact":36.0,"title":"Fire & Brimstone","description":"Lightning burst + blazes."},{"id":"don-40","type":"donation","exact":40.0,"title":"Drugs Are Bad, Mkay","description":"Short burst of bad potion effects."},{"id":"don-50","type":"donation","exact":50.0,"title":"SuperMan","description":"Elytra (Mending/Unbreaking) + rockets. Go fly."},{"id":"don-65","type":"donation","exact":65.0,"title":"Berserker","description":"Short power-up: Strength, Speed, and some Resistance."},{"id":"don-75","type":"donation","exact":75.0,"title":"Ride the Lightning","description":"Thunderstorm + heavy lightning ring + two charged creepers."},{"id":"don-100","type":"donation","exact":100.0,"title":"Night of the Living Dead","description":"A large zombie horde descends."},{"id":"don-502","type":"donation","exact":5.02,"title":"Bank: Chance Cube +1","description":"Adds one Chance Cube to the end-of-night opening.","badges":["banked"]},{"id":"don-1502","type":"donation","exact":15.02,"title":"Bank: Giant Chance Cubes +3","description":"Adds three Giant Chance Cubes to the bank.","badges":["banked"]},{"id":"don-5002","type":"donation","exact":50.02,"title":"Place Giant Cube + Bank +10","description":"Drops a Giant Chance Cube now and adds ten more to the bank.","badges":["banked"]},{"id":"don-15002","type":"donation","exact":150.02,"title":"Place 2\u00d7 Icosahedron + Bank +30","description":"Drops two Icosahedrons now and adds thirty more to the bank.","badges":["banked"]},{"id":"bits-777","type":"bits","range":[777,999],"title":"DOOM MINUTE","description":"Darkness + a nasty boss shows up, plus flying troublemakers."},{"id":"bits-1000","type":"bits","range":[1000,999999],"title":"BLOOD NIGHT","description":"Darkness and a mini boss-event. Might include a Night Lich."},{"id":"bits-base","type":"bits","range":[10,99999],"title":"Random Mobs (scales up)","description":"Any bits might spawn mobs. Bigger cheers = bigger chaos."},{"id":"sub-new","type":"subs","title":"New Subscription","description":"Toast on stream + a grab-bag of resources."},{"id":"sub-gift","type":"subs","title":"Gifted Subscriptions","description":"Toast + resource grab-bag for the gifts."},{"id":"follow","type":"social","title":"Follow","description":"Toast + random food; sometimes something shiny."},{"id":"host","type":"social","title":"Host","description":"Toast + random food; shows viewer count."},{"id":"raid","type":"raid","title":"Raid","description":"Welcomed by zombies named after the raider; bigger raids mean more zombies."}]};
+const DATA = {events: [{"id":"don-core-low","type":"donation","title":"General Chaos (low tier)","range":[1.0,74.99],"description":"Normal chaos effects. Might roll a major boss (rare).","details":"Boss pool includes Wither, Ender Dragon, and ATM bosses.","badges":["might roll boss"]},{"id":"don-core-high","type":"donation","title":"High Roller Chaos","range":[75.0,999999.0],"description":"Bigger chaos. Might roll a major boss (much higher chance).","details":"Boss pool includes Wither, Ender Dragon, and ATM bosses.","badges":["might roll boss"]},{"id":"don-150-end","type":"donation","exact":150.0,"title":"End Arena","description":"Teleports the streamer to a custom End pad and starts a dragon fight.","badges":["boss","signature"]},{"id":"don-500","type":"donation","exact":5.0,"title":"Inventory Scramble","description":"Drops your equipped gear safely, equips goofy items, adds clutter."},{"id":"don-3","type":"donation","exact":3.0,"title":"Random Item","description":"Drops a random useful item (dungeon loot)."},{"id":"don-4","type":"donation","exact":4.0,"title":"Cake Ingredients","description":"3\u00d7 milk, 2\u00d7 sugar, 1\u00d7 egg, 3\u00d7 wheat."},{"id":"don-499","type":"donation","exact":4.99,"title":"Birthday Spark","description":"Fireworks burst + small gift (emeralds + cake).","badges":["birthday"]},{"id":"don-6","type":"donation","exact":6.0,"title":"Diamonds","description":"4\u00d7 diamonds."},{"id":"don-666","type":"donation","exact":6.66,"title":"Jump Scare","description":"Rotating scary sounds + on-screen flash."},{"id":"don-7","type":"donation","exact":7.0,"title":"Night Switch","description":"Flips the world to night."},{"id":"don-777","type":"donation","exact":7.77,"title":"Lucky Gift","description":"Two rolls of high-tier loot (End City / Bastion / Ancient City).","badges":["loot"]},{"id":"don-8","type":"donation","exact":8.0,"title":"Crazy Cat Lady","description":"Spawns 13 cats around the streamer."},{"id":"don-9","type":"donation","exact":9.0,"title":"This Little Piggy","description":"Spawns 5 pigs."},{"id":"don-10","type":"donation","exact":10.0,"title":"1000 Buttons","description":"4 stacks of stone buttons."},{"id":"don-11","type":"donation","exact":11.0,"title":"Magma Cubes","description":"Spawns 3 magma cubes."},{"id":"don-12","type":"donation","exact":12.0,"title":"Who Let the Dogs Out","description":"Spawns 13 wolves."},{"id":"don-15","type":"donation","exact":15.0,"title":"BaseLine Chicken","description":"Summons a named chicken \"BaseLine\"."},{"id":"don-16","type":"donation","exact":16.0,"title":"SSSsss","description":"Spawns a creeper."},{"id":"don-17","type":"donation","exact":17.0,"title":"Baby Mob Trio","description":"Baby cow, pig, sheep."},{"id":"don-1777","type":"donation","exact":17.77,"title":"Super Lucky Gift","description":"Three rolls of high-tier loot.","badges":["loot"]},{"id":"don-20","type":"donation","exact":20.0,"title":"Have a Gift","description":"A loot chest appears."},{"id":"don-21","type":"donation","exact":21.0,"title":"Thriller","description":"Mini zombie dance party."},{"id":"don-25","type":"donation","exact":25.0,"title":"Witch Doctor","description":"Summons a coven of witches."},{"id":"don-29","type":"donation","exact":29.0,"title":"TNT Minecarts","description":"Four TNT minecarts roll in."},{"id":"don-30","type":"donation","exact":30.0,"title":"Pandora\u2019s Box","description":"Might roll lightning, levitation, charged creeper, skeleton wave, or invisibility."},{"id":"don-31","type":"donation","exact":31.0,"title":"Ghast Cameo","description":"A Ghast drops by to say hi (and scream)."},{"id":"don-35","type":"donation","exact":35.0,"title":"Level Up","description":"+30 XP levels."},{"id":"don-36","type":"donation","exact":36.0,"title":"Fire & Brimstone","description":"Lightning burst + blazes."},{"id":"don-40","type":"donation","exact":40.0,"title":"Drugs Are Bad, Mkay","description":"Short burst of bad potion effects."},{"id":"don-50","type":"donation","exact":50.0,"title":"SuperMan","description":"Elytra (Mending/Unbreaking) + rockets."},{"id":"don-55","type":"donation","exact":55.0,"title":"Drop Everything","description":"Safely spills entire inventory + armor; Curios best\u2011effort."},{"id":"don-65","type":"donation","exact":65.0,"title":"Berserker","description":"Short power-up: Strength + Speed + Resistance."},{"id":"don-75","type":"donation","exact":75.0,"title":"Ride the Lightning","description":"Storm + heavy lightning ring + two charged creepers."},{"id":"don-100","type":"donation","exact":100.0,"title":"Night of the Living Dead","description":"A large zombie horde."},{"id":"don-502","type":"donation","exact":5.02,"title":"Bank: Chance Cube +1","description":"Adds one Chance Cube to the end-of-night opening.","badges":["banked",".02"]},{"id":"don-1502","type":"donation","exact":15.02,"title":"Bank: Giant Chance Cubes +3","description":"Adds three Giant Chance Cubes to the bank.","badges":["banked",".02"]},{"id":"don-5002","type":"donation","exact":50.02,"title":"Place Giant + bank +10","description":"Drops a Giant Chance Cube now and adds ten Giants to the bank.","badges":["banked",".02"]},{"id":"don-15002","type":"donation","exact":150.02,"title":"2\u00d7 Icosahedron + bank +30","description":"Drops two Icosahedrons now and banks thirty.","badges":["banked",".02"]},{"id":"bits-777","type":"bits","range":[777,999],"title":"DOOM MINUTE","description":"Darkness + nasty boss + flying troublemakers."},{"id":"bits-1000","type":"bits","range":[1000,999999],"title":"BLOOD NIGHT","description":"Darkness + mini boss-event."},{"id":"bits-base","type":"bits","range":[10,99999],"title":"Random Mobs (scales up)","description":"Any bits might spawn mobs. Bigger cheers = bigger chaos."},{"id":"sub-new","type":"subs","title":"New Subscription","description":"Toast + a grab-bag of resources."},{"id":"sub-gift","type":"subs","title":"Gifted Subscriptions","description":"Toast + resource grab-bag."},{"id":"follow","type":"social","title":"Follow","description":"Toast + random food; sometimes something shiny."},{"id":"host","type":"social","title":"Host","description":"Toast + random food; shows viewer count."},{"id":"raid","type":"raid","title":"Raid","description":"Zombie welcome scaled to raider count."}]};
 
-let filters = new Set(); // type filters
+// Stackable .02 products for suggestions
+const PRODUCTS = [
+  {price:5.02, title:"Chance Cube (bank +1)", tag:"cube", bank:"+1 Cube each"},
+  {price:15.02, title:"Giant Chance Cubes (bank +3)", tag:"giant", bank:"+3 Giants each"},
+  {price:50.02, title:"Place Giant now + bank +10", tag:"place_giant", bank:"+10 Giants each"},
+  {price:150.02, title:"2× Icosahedron now + bank +30", tag:"ico", bank:"+30 each"}
+];
 
-function usePreset(val) {
-  document.getElementById('amount').value = Number(val).toFixed(2);
-  renderAmount();
-  updatePermalink();
-}
+let filters = new Set();
+
+function preset(v){ document.getElementById('amount').value = Number(v).toFixed(2); render(); }
 
 function toggleFilter(el){
   const t = el.dataset.filter;
   if(filters.has(t)){ filters.delete(t); el.style.background='#0b1220'; el.style.color='#9cc1ff'; el.style.borderColor='#1f2a44'; }
   else { filters.add(t); el.style.background='#113357'; el.style.color='#e6eef6'; el.style.borderColor='#235c92'; }
   renderList();
-  updatePermalink();
+  syncURL();
 }
 
-function parseAmount(val){
-  const n = parseFloat(val);
-  if (Number.isFinite(n) && n >= 0) return Math.round(n*100)/100;
-  return null;
-}
+function parseAmount(){ const n=parseFloat(document.getElementById('amount').value); return Number.isFinite(n)&&n>=0?Math.round(n*100)/100:null; }
 
 function matchesAmount(ev, amt){
   if (typeof ev.exact === 'number') return Math.abs(ev.exact - amt) < 0.001;
@@ -146,35 +127,70 @@ function matchesAmount(ev, amt){
   return false;
 }
 
-function badgeHTML(badges){
-  if (!badges) return "";
-  return '<div class="chips">' + badges.map(b => `<span class="chip">${b}</span>`).join('') + '</div>';
-}
+function chip(txt){ return '<span class="chip">'+txt+'</span>'; }
 
 function eventCard(ev){
   const type = ev.type.charAt(0).toUpperCase()+ev.type.slice(1);
-  const money = (typeof ev.exact === 'number') ? `$${ev.exact.toFixed(2)}` :
-                (ev.range ? `$${ev.range[0].toFixed(2)}–$${ev.range[1].toFixed(2)}` : '');
-  const rangeLabel = ev.type==='donation' ? (money ? ` · ${money}` : '') : '';
-  return `<div class="event">
-    <div class="type">${type}${rangeLabel}</div>
-    <div class="title">${ev.title}</div>
-    <div class="desc">${ev.description}${ev.details?` <span class="muted">${ev.details}</span>`:''}</div>
-    ${badgeHTML(ev.badges)}
-  </div>`;
+  const money = (typeof ev.exact === 'number')?('$'+ev.exact.toFixed(2)):(ev.range?('$'+ev.range[0].toFixed(2)+'–$'+ev.range[1].toFixed(2)):'');
+  const rangeLabel = ev.type==='donation' && money?(' · '+money):'';
+  const badges = (ev.badges||[]).map(chip).join('');
+  return '<div class="event">'
+    + '<div class="type">'+type+rangeLabel+'</div>'
+    + '<div class="title">'+ev.title+'</div>'
+    + '<div class="desc">'+ev.description+(ev.details?(' <span class="muted">'+ev.details+'</span>'):'')+'</div>'
+    + badges
+    + '</div>';
 }
 
-function renderAmount(){
-  const val = parseAmount(document.getElementById('amount').value);
+function renderAmountMatches(){
+  const val = parseAmount();
   const mount = document.getElementById('amountResults');
   if (val===null){ mount.innerHTML = '<div class="muted">Enter a number to see matches.</div>'; return; }
   const relevant = DATA.events.filter(e => e.type==='donation' && matchesAmount(e, val));
-  relevant.sort((a,b)=> (typeof a.exact==='number'?0:1)-(typeof b.exact==='number'?0:1)); // exact first
-  if (!relevant.length){
-    mount.innerHTML = `<div class="muted">No exact triggers at $${val.toFixed(2)}. You fall under the general rules above.</div>`;
-    return;
-  }
+  relevant.sort(function(a,b){ return ((typeof a.exact==='number')?0:1)-((typeof b.exact==='number')?0:1); });
+  if (!relevant.length){ mount.innerHTML = '<div class="muted">No exact triggers at $'+val.toFixed(2)+'. You fall under the general rules above.</div>'; return; }
   mount.innerHTML = relevant.map(eventCard).join('');
+}
+
+function suggestAllOf(price, title, bankNote, amt){
+  const n = Math.floor(amt / price);
+  if (n<=0) return null;
+  const cost = (n*price);
+  const left = (amt - cost);
+  return {kind:'single', title: (n+'× '+title), desc:('Costs $'+cost.toFixed(2)+' · Leftover $'+left.toFixed(2)+(bankNote?(' · '+bankNote):''))};
+}
+
+function suggestBestMix(amt){
+  const order = [150.02, 50.02, 15.02, 5.02];
+  let left = amt;
+  const picks = [];
+  for (var i=0;i<order.length;i++){
+    const p = order[i];
+    const n = Math.floor(left / p);
+    if (n>0){
+      const item = PRODUCTS.find(x=>x.price===p);
+      picks.push({n, item});
+      left = Math.round((left - n*p)*100)/100;
+    }
+  }
+  if (!picks.length) return null;
+  const lines = picks.map(x=> (x.n+'× $'+x.item.price.toFixed(2)+' — '+x.item.title)).join('<br>');
+  return {kind:'mix', title:'Best Mix (cubes-first)', desc: lines + '<br><span class="muted">Leftover $'+left.toFixed(2)+'</span>'};
+}
+
+function renderSuggestions(){
+  const amt = parseAmount();
+  const mount = document.getElementById('suggestions');
+  if (amt===null){ mount.innerHTML = '<div class="muted">Enter a number to get combos (e.g., try 50, 75, 150.02).</div>'; return; }
+  const cards = [];
+  for (var i=0;i<PRODUCTS.length;i++){
+    const p = PRODUCTS[i];
+    const s = suggestAllOf(p.price, p.title, p.bank, amt);
+    if (s) cards.push(s);
+  }
+  const mix = suggestBestMix(amt); if (mix) cards.unshift(mix);
+  if (!cards.length){ mount.innerHTML = '<div class="muted">No .02 combos for this amount. Try 5.02, 15.02, 50.02, 150.02.</div>'; return; }
+  mount.innerHTML = cards.map(c=>('<div class="suggest"><div class="title">'+c.title+'</div><div class="desc">'+c.desc+'</div></div>')).join('');
 }
 
 function renderList(){
@@ -182,61 +198,21 @@ function renderList(){
   const list = document.getElementById('list');
   const empty = document.getElementById('empty');
   let arr = DATA.events.slice();
-  if (filters.size){
-    arr = arr.filter(e => filters.has(e.type));
-  }
-  if (q){
-    arr = arr.filter(e => (e.title+' '+(e.description||'')+' '+(e.details||'')).toLowerCase().includes(q));
-  }
-  if (!arr.length){
-    list.innerHTML = ''; empty.style.display='block'; return;
-  }
+  if (filters.size) arr = arr.filter(e => filters.has(e.type));
+  if (q) arr = arr.filter(e => (e.title+' '+(e.description||'')+' '+(e.details||'')).toLowerCase().includes(q));
+  if (!arr.length){ list.innerHTML=''; empty.style.display='block'; return; }
   empty.style.display='none';
   list.innerHTML = arr.map(eventCard).join('');
 }
 
-function updatePermalink(){
-  const params = new URLSearchParams();
-  const amt = document.getElementById('amount').value;
-  const q = document.getElementById('search').value.trim();
-  if (amt) params.set('amount', amt);
-  if (q) params.set('q', q);
-  if (filters.size) params.set('types', Array.from(filters).join(','));
-  const newUrl = window.location.pathname + (params.toString() ? ('?'+params.toString()) : '');
-  history.replaceState({}, '', newUrl);
-}
+function render(){ renderAmountMatches(); renderSuggestions(); renderList(); syncURL(); }
+function syncURL(){ const params=new URLSearchParams(); const amt=document.getElementById('amount').value; const q=document.getElementById('search').value.trim(); if (amt) params.set('amount',amt); if (q) params.set('q',q); if (filters.size) params.set('types',Array.from(filters).join(',')); history.replaceState({},'',window.location.pathname+(params.toString()?('?'+params.toString()):'')); }
+function copyLink(){ syncURL(); const u=window.location.href; if(navigator.clipboard&&window.isSecureContext) navigator.clipboard.writeText(u).then(()=>alert('Link copied 👌'),()=>prompt('Copy this URL:',u)); else prompt('Copy this URL:',u); }
 
-function copyLink(){
-  updatePermalink();
-  if (navigator.clipboard && window.isSecureContext) { 
-    navigator.clipboard.writeText(window.location.href).then(()=>{
-      alert('Link copied 👌');
-    },()=>{
-      prompt('Copy this URL:', window.location.href);
-    });
-  } else {
-    prompt('Copy this URL:', window.location.href);
-  }
-}
+document.getElementById('amount').addEventListener('input', render);
+document.getElementById('search').addEventListener('input', render);
 
-document.getElementById('amount').addEventListener('input', ()=>{ renderAmount(); updatePermalink(); });
-document.getElementById('search').addEventListener('input', ()=>{ renderList(); updatePermalink(); });
-
-(function init(){
-  const p = new URLSearchParams(location.search);
-  const amt = p.get('amount'); if (amt) document.getElementById('amount').value = amt;
-  const q = p.get('q'); if (q) document.getElementById('search').value = q;
-  const t = p.get('types');
-  if (t){ t.split(',').forEach(function(type){ 
-    const el = document.querySelector('[data-filter="'+type+'"]'); if (el) el.click();
-  }); }
-  renderAmount(); renderList();
-})();
+(function init(){ const p=new URLSearchParams(location.search); const amt=p.get('amount'); if(amt) document.getElementById('amount').value=amt; const q=p.get('q'); if(q) document.getElementById('search').value=q; const t=p.get('types'); if(t){ t.split(',').forEach(function(type){ const el=document.querySelector('[data-filter="'+type+'"]'); if(el) el.click(); }); } render(); })();
 </script>
-
-<div class="tn-badge" title="Powered by TrustedNoobs">
-  <small>Powered by</small> TrustedNoobs
-</div>
-
 </body>
 </html>
